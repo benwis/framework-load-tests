@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en" class=" h-full"><head><meta charSet="utf-8"/><title>benwis</title><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="description" content="Ben Wishovich&#x27;s personal website"/><meta property="og:title" content="benwis"/><meta property="og:description" content="Ben Wishovich&#x27;s personal website"/><meta property="og:image" content="https://benwis.imgix.net/pictureofMe.jpeg"/><link rel="stylesheet" href="/build/_assets/tailwind-YYQGUZZ2.css"/><link rel="stylesheet" href="/build/_assets/globalStyles-WVKMFE2U.css"/><link rel="stylesheet" href="/build/_assets/indexStyles-VOC3HTA6.css"/><meta name="color-scheme" content="dark light"/><script>
+// hi there dear reader 👋
+// this is how I make certain we avoid a flash of the wrong theme. If you select
+// a theme, then I'll know what you want in the future and you'll not see this
+// script anymore.
+;(() => {
+  const theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? 'dark'
+    : 'light';
+  const cl = document.documentElement.classList;
+  const themeAlreadyApplied = cl.contains('light') || cl.contains('dark');
+  if (themeAlreadyApplied) {
+    // this script shouldn't exist if the theme is already applied!
+    console.warn(
+      "Hi there, could you let me know you're seeing this message? Thanks!",
+    );
+  } else {
+    cl.add(theme);
+  }
+  const meta = document.querySelector('meta[name=color-scheme]');
+  if (meta) {
+    if (theme === 'dark') {
+      meta.content = 'dark light';
+    } else if (theme === 'light') {
+      meta.content = 'light dark';
+    }
+  } else {
+    console.warn(
+      "Hey, could you let me know you're seeing this message? Thanks!",
+    );
+  }
+})();
+</script><style>
+  /* default light, but app-preference is "dark" */
+  html.dark {
+    light-mode {
+      display: none;
+    }
+  }
+  /* default light, and no app-preference */
+  html:not(.dark) {
+    dark-mode {
+      display: none;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    /* prefers dark, but app-preference is "light" */
+    html.light {
+      dark-mode {
+        display: none;
+      }
+    }
+    /* prefers dark, and app-preference is "dark" */
+    html.dark,
+    /* prefers dark and no app-preference */
+    html:not(.light) {
+      light-mode {
+        display: none;
+      }
+    }
+  }
+</style><script src="https://clean-piano.benw.is/script.js" data-spa="auto" data-site="PCCFUQTY" defer=""></script></head><body class="h-screen bg-white dark:bg-gray-900 max-w-5xl mx-auto flex flex-col"><nav class="relative bg-white dark:bg-gray-900 text-gray-700 dark:text-white"><div class="relative pt-6 pb-16 md:pb-6 sm:pb-24"><div data-headlessui-state=""><div class="max-w-7xl mx-auto px-4 sm:px-6"><nav class="relative flex items-center justify-between sm:h-10" aria-label="Global"><div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0"><div class="flex items-center justify-between w-full md:w-auto"><div class="-mr-2 flex items-center md:hidden"><button class="bg-gray-50  dark:bg-gray-900 dark:text-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:decoration-yellow-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" id="headlessui-popover-button-:R6:" type="button" aria-expanded="false" data-headlessui-state=""><span class="sr-only">Open main menu</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"></path></svg></button></div></div></div><div class="hidden md:flex md:space-x-10"><a aria-current="page" class="font-medium text-gray-700 dark:text-white decoration-yellow-400 underline" href="/">Home</a><a class="font-medium text-gray-700 dark:text-white hover:decoration-yellow-400 hover:underline" href="/posts">Blog</a><a class="font-medium text-gray-700 dark:text-white hover:decoration-yellow-400 hover:underline" href="/about">About Me</a><a class="font-medium text-gray-700 dark:text-white hover:decoration-yellow-400 hover:underline" href="/portfolio">Portfolio</a></div><div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0"><span class="inline-flex rounded-md shadow mx-4"><button class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-yellow-400 bg-gray-700 hover:bg-gray-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg></button></span><span class="inline-flex rounded-md shadow mx-4"><a class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-gray-700 bg-yellow-400 dark:text-text-gray-700 hover:bg-yellow-600" href="/login">Log in</a></span></div></nav></div></div></div></nav><main class="mx-auto flex max-w-2xl flex-col items-center justify-center border-gray-200 px-4 pb-16 md:pt-4 dark:border-gray-900 sm:px-8"><div class="flex flex-col-reverse items-start sm:flex-row"><div class="flex flex-col pr-8"><h1 class="mb-3 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">I am<span class="relative ml-2 inline-block before:absolute before:-inset-1 before:block before:rounded-lg dark:bg-gray-900 before:py-8"><span class="brand relative skew-y-3 py-4 px-2 text-7xl uppercase text-yellow-400 dark:text-yellow-400">BENWIS</span></span></h1><h2 class="mb-4 text-gray-700 dark:text-gray-200">Software Engineer, Full Stack Web Developer, Runner.<br/><span class="font-semibold">Rust, Typescript, WASM, Python, React, Svelte</span></h2><p class="mb-16 text-gray-600"><a href="https://github.com/benwis" class="rounded font-bold text-yellow-400 inline-flex items-center px-0 py-2 border border-transparent font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-stone-500 hover:text-yellow-500">Check out my work!</a></p></div></div><section class="mb-16 w-full"><h3 class="mb-6 text-2xl font-bold tracking-tight text-black dark:text-white md:text-4xl">Recent Posts</h3><div class="flex flex-col gap-6 md:flex-row"></div><a class="mt-8 flex h-6 rounded-lg leading-7 text-gray-600 
+				 transition-all dark:text-gray-400 dark:hover:text-gray-200" href="/posts">See more posts<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="ml-1 h-6 w-6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"></path></svg></a></section></main><footer class="bg-white dark:bg-gray-900 mt-auto"><div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8"><div class="flex justify-center space-x-6 md:order-2"><a href="/rss.xml" class="text-gray-400 dark:text-white hover:text-gray-500"><span class="sr-only">RSS</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12.75 19.5v-.75a7.5 7.5 0 00-7.5-7.5H4.5m0-6.75h.75c7.87 0 14.25 6.38 14.25 14.25v.75M6 18.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"></path></svg></a><a href="https://twitter.com/iambenwis" class="text-gray-400 dark:text-white hover:text-gray-500"><span class="sr-only">Twitter</span><svg fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg></a><a href="https://hachyderm.io/@benwis" rel="me noreferrer" class="text-gray-400 dark:text-white hover:text-gray-500"><span class="sr-only">Mastodon</span><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6 w-6" aria-hidden="true"><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"></path></svg></a><a href="https://github.com/benwis" class="text-gray-400 dark:text-white hover:text-gray-500"><span class="sr-only">GitHub</span><svg fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg></a></div><div class="mt-8 md:mt-0 md:order-1"><p class="text-center text-base text-gray-400 dark:text-white">© 2022 Ben Wishovich</p></div></div></footer><script>;(() => {
+  const theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? 'dark'
+    : 'light';
+  const darkEls = document.querySelectorAll("dark-mode");
+  const lightEls = document.querySelectorAll("light-mode");
+  for (const darkEl of darkEls) {
+    if (theme === "dark") {
+      for (const child of darkEl.childNodes) {
+        darkEl.parentElement?.append(child);
+      }
+    }
+    darkEl.remove();
+  }
+  for (const lightEl of lightEls) {
+    if (theme === "light") {
+      for (const child of lightEl.childNodes) {
+        lightEl.parentElement?.append(child);
+      }
+    }
+    lightEl.remove();
+  }
+})();</script><script>(STORAGE_KEY => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({
+        key
+      }, "");
+    }
+
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || "{}");
+      let storedY = positions[window.history.state.key];
+
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(STORAGE_KEY);
+    }
+  })("positions")</script><link rel="modulepreload" href="/build/manifest-03801B8F.js"/><link rel="modulepreload" href="/build/entry.client-DOIB7QOT.js"/><link rel="modulepreload" href="/build/_shared/chunk-AFPLJYD3.js"/><link rel="modulepreload" href="/build/_shared/chunk-XBDI323W.js"/><link rel="modulepreload" href="/build/_shared/chunk-Q3IECNXJ.js"/><link rel="modulepreload" href="/build/_shared/chunk-SC5GERDR.js"/><link rel="modulepreload" href="/build/_shared/chunk-G5NILFTD.js"/><link rel="modulepreload" href="/build/root-UIDJEHW6.js"/><link rel="modulepreload" href="/build/_shared/chunk-UVLQHCTS.js"/><link rel="modulepreload" href="/build/routes/index-BVVU5YPA.js"/><script>window.__remixContext = {"appState":{"trackBoundaries":true,"trackCatchBoundaries":true,"catchBoundaryRouteId":null,"renderBoundaryRouteId":null,"loaderBoundaryRouteId":null},"matches":[{"params":{},"pathname":"/","route":{"id":"root","path":"","module":"/build/root-UIDJEHW6.js","imports":["/build/_shared/chunk-SC5GERDR.js","/build/_shared/chunk-G5NILFTD.js"],"hasAction":false,"hasLoader":true,"hasCatchBoundary":false,"hasErrorBoundary":false}},{"params":{},"pathname":"/","route":{"id":"routes/index","parentId":"root","index":true,"module":"/build/routes/index-BVVU5YPA.js","imports":["/build/_shared/chunk-UVLQHCTS.js"],"hasAction":false,"hasLoader":true,"hasCatchBoundary":false,"hasErrorBoundary":false}}],"routeData":{"root":{"user":null,"admin":false,"theme":null,"env":"production"},"routes/index":{"posts":[]}}};</script><script type="module" async="">import "/build/manifest-03801B8F.js";
+import * as route0 from "/build/root-UIDJEHW6.js";
+import "/build/manifest-03801B8F.js";
+import * as route1 from "/build/routes/index-BVVU5YPA.js";
+window.__remixRouteModules = {"root":route0,"routes/index":route1};
+
+import("/build/entry.client-DOIB7QOT.js");</script></body></html>
